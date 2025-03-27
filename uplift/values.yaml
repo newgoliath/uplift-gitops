@@ -23,6 +23,7 @@ vms_image_url: http://s3.us-east.cloud-object-storage.appdomain.cloud/roadshowoc
 # vms_image_url: https://catalog-item-assets.s3.us-east-2.amazonaws.com/qcow_images
 vms_start_vms: "true"
 vms_run_strategy: "Manual"
+vms_eviction_strategy: "None"
 vms_machine_type: q35
 
 ossm_vms_servicemeshmember_create: "false"
