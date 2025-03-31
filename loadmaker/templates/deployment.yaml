@@ -5,7 +5,6 @@ apiVersion: apps/v1
 metadata:
   name: loadmaker
   namespace: {{ .Values.windows_mesh_namespace_base }}-user{{ .user_index }}
-  # namespace: windowsmesh
 spec:
   replicas: 1
   selector:
@@ -19,7 +18,7 @@ spec:
     spec:
       containers:
         - name: container
-          image: bunchjesse/loadtest
+          image: quay.io/rhpds/loadtest
           ports:
             - containerPort: 8080
               protocol: TCP
