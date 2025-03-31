@@ -12,7 +12,6 @@ spec:
       app: loadmaker
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: loadmaker
     spec:
