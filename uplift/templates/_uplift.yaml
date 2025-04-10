@@ -260,6 +260,8 @@ spec:
             bios: {}
         machine:
           type: {{ .Values.vms_machine_type }}
+        memory:
+          guest: 2Gi
         resources:
           requests:
             memory: 2Gi
@@ -380,6 +382,8 @@ spec:
             efi: {}
         machine:
           type: {{ .Values.vms_machine_type }}
+        memory:
+          guest: 1Gi
         resources:
           requests:
             memory: 1Gi
@@ -499,6 +503,8 @@ spec:
             efi: {}
         machine:
           type: {{ .Values.vms_machine_type }}
+        memory:
+          guest: 1Gi
         resources:
           requests:
             memory: 1Gi
