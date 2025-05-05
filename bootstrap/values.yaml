@@ -12,6 +12,7 @@ datavolumes:
     targetRevision: judd-datavolumes
     path: datavolumes
   imageUrl: https://catalog-item-assets.s3.us-east-2.amazonaws.com/qcow_images
+  volumeSnapshotClassName: ocs-storagecluster-rbdplugin-snapclass
 
 content:
   repoUrl: https://github.com/rhpds/showroom_template_default.git
