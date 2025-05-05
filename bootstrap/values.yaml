@@ -6,6 +6,13 @@ deployer:
   domain: REPLACEME-OPENSHIFT_DOMAIN-multi-tenant-uplift
   apiUrl: https://api.cluster.opentlc.com:6443
 
+datavolumes:
+  git:
+    url: https://github.com/rhpds/ocp-cluster-addons.git
+    targetRevision: judd-datavolumes
+    path: datavolumes
+  imageUrl: https://catalog-item-assets.s3.us-east-2.amazonaws.com/qcow_images
+
 content:
   repoUrl: https://github.com/rhpds/showroom_template_default.git
   repoRef: main

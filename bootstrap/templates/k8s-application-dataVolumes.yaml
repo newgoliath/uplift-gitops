@@ -1,0 +1,21 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: datavolumes
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    repoURL: {{ .Values.datavolumes.git.url }}
+    targetRevision: {{ .Values.datavolumes.git.revision }}
+    path: {{ .Values.datavolumes.git.path }}
+    helm:
+      values: |
+        datavolumes:
+          imageUrl: {{ .Values.datavolumes.imageUrl }}
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated: {}
