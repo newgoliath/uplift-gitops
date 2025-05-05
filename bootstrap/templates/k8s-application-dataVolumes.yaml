@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: {{ .Values.datavolumes.git.url }}
-    targetRevision: {{ .Values.datavolumes.git.revision }}
+    targetRevision: {{ .Values.datavolumes.git.targetRevision }}
     path: {{ .Values.datavolumes.git.path }}
     helm:
       values: |
