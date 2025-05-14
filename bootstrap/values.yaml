@@ -9,7 +9,7 @@ deployer:
 datavolumes:
   git:
     repoUrl: https://github.com/rhpds/ocp-cluster-addons.git
-    targetRevision: judd-datavolumes
+    targetRevision: main
     path: datavolumes
   imageUrl: https://catalog-item-assets.s3.us-east-2.amazonaws.com/qcow_images
   volumeSnapshotClassName: ocs-storagecluster-rbdplugin-snapclass
