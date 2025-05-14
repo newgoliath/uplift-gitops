@@ -44,7 +44,6 @@ spec:
                   memory: 64Mi
               user_data: |
                 bastion_password: from_helm
-
             # to have two terminals in one tab
             # set stacked_terminals to "true"
             # and indicate which two terminals you want
@@ -54,12 +53,10 @@ spec:
               display_name: "Stacked Terminal"
               top: "terminal"
               bottom: "wetty"
-
             second_terminal_tab:
               setup: "true"
               name: second-terminal-tab
               display_name: "Terminal 2"
-
             terminal:
               setup: "true"
               image: quay.io/rhpds/openshift-showroom-terminal-ocp:latest
@@ -79,7 +76,6 @@ spec:
                 pvcSize: 5Gi
                 # Use default Storage Class when empty
                 storageClass: ""
-
             wetty:
               setup: "true"
               image: quay.io/rhpds/wetty:latest
@@ -100,7 +96,6 @@ spec:
                 sshUser: ec2-user
                 sshAuth: password
                 sshPass: password
-
             # To be fully implemented
             codeserver:
               setup: "false"
@@ -111,11 +106,9 @@ spec:
                 requests:
                   cpu: 500m
                   memory: 512Mi
-
             # To be fully implemented
             ocpconsole:
               setup: "false"
-
             novnc:
               setup: "false"
               image: ghcr.io/rhpds/showroom-novnc:latest
