@@ -2,6 +2,8 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+guid: nnnnn
+
 deployer:
   domain: REPLACEME-OPENSHIFT_DOMAIN-multi-tenant-uplift
   apiUrl: https://api.cluster.opentlc.com:6443
