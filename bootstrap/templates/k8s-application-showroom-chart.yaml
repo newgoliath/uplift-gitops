@@ -7,7 +7,7 @@ metadata:
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: showroom-{{ $.Values.guid }}-{{ $.Values.username }}
+    namespace: showroom-{{ $.Values.guid }}-{{ $.Values.showroom.username }}
   goTemplate: true
   # goTempalteOptions: ["missingkey=error"]
   project: default
