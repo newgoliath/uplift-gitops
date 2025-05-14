@@ -1,0 +1,20 @@
+# ---
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: kubevirt
+#   namespace: openshift-gitops
+# spec:
+#   project: default
+#   source:
+#     repoURL: {{ .Values.kubevirt.git.repoUrl }}
+#     targetRevision: {{ .Values.kubevirt.git.targetRevision }}
+#     path: {{ .Values.kubevirt.git.path }}
+#     helm:
+#       values: |
+#         kubevirt: chicken
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: default
+#   syncPolicy:
+#     automated: {}

@@ -10,10 +10,6 @@ spec:
   generators:
     - list:
         elements:
-          - app: kubevirt
-            path: kubevirt
-            dependsOn: ""
-            namespace: openshift-gitops
           - app: ossm-cp
             path: ossm-cp
             dependsOn: ""

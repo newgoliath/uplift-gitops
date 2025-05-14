@@ -27,10 +27,10 @@ addons:
   repoRef: showroom
 
 showroom:
+  username: user1
   namespace: showroom
-  addons:
-    repoPath: showroom
-    repoRef: showroom
+  repoUrl: https://github.com/rhpds/showroom-deployer.git
+  repoRef: main
 
 user:
   count: "1"
