@@ -17,16 +17,9 @@ spec:
     path: charts/showroom-single-pod
     helm:
       values: |
-        guid: {{ .Values.guid }} # only passed to terminal for ENV convenience
+        guid: {{ .Values.guid }}
         deployer:
           domain: {{ .Values.deployer.domain }}
-        content:
-          contentOnly: {{ .Values.showroom.content.contentOnly }}
-          title: UpLift
-          repoUrl: {{ .Values.showroom.content.repoUrl }}
-          repoRef: {{ .Values.showroom.content.repoRef }}
-          user_data: |
-            bastion_password: from_helm
   syncPolicy:
     automated:
       prune: true
