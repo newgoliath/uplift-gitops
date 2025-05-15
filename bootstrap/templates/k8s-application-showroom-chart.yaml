@@ -20,6 +20,8 @@ spec:
         guid: {{ .Values.guid }}
         deployer:
           domain: {{ .Values.deployer.domain }}
+        content:
+          contentOnly: "true"
   syncPolicy:
     automated:
       prune: true
