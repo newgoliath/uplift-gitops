@@ -24,6 +24,8 @@ spec:
           contentOnly: "true"
           repoUrl: https://github.com/rhpds/uplift-showroom.git
           repoRef: dev
+          user_data: |
+            password: gitops_sample_password
   syncPolicy:
     automated:
       prune: true
