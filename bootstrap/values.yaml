@@ -16,9 +16,6 @@ datavolumes:
   imageUrl: https://catalog-item-assets.s3.us-east-2.amazonaws.com/qcow_images
   volumeSnapshotClassName: ocs-storagecluster-rbdplugin-snapclass
 
-content:
-  repoUrl: https://github.com/rhpds/showroom_template_default.git
-  repoRef: main
 
 workloads:
   repoUrl: https://github.com/newgoliath/rosa_uplift.git
@@ -33,6 +30,10 @@ showroom:
   namespace: showroom
   repoUrl: https://github.com/rhpds/showroom-deployer.git
   repoRef: main
+  content:
+    contentOnly: "true"
+    repoUrl: https://github.com/rhpds/showroom_template_default.git
+    repoRef: dev
 
 user:
   count: "1"
