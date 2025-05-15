@@ -22,6 +22,8 @@ spec:
           domain: {{ .Values.deployer.domain }}
         content:
           contentOnly: "true"
+          repoUrl: https://github.com/rhpds/uplift-showroom.git
+          repoRef: dev
   syncPolicy:
     automated:
       prune: true
