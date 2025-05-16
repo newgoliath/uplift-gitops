@@ -25,7 +25,11 @@ spec:
           repoUrl: https://github.com/rhpds/uplift-showroom.git
           repoRef: dev
           user_data: |
+            user: gitops_sample_username
             password: gitops_sample_password
+            vcenter_console: gitops_sample_vcenter_console
+            vcenter_full_user: gitops_sample_vcenter_full_user
+            vcenter_password: gitops_sample_vcenter_password
   syncPolicy:
     automated:
       prune: true
