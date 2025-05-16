@@ -25,8 +25,7 @@ spec:
           repoUrl: https://github.com/rhpds/uplift-showroom.git
           repoRef: dev
           user_data: |
-            deployer:
-              domain: {{ .Values.deployer.domain }}
+            deployer_domain: {{ .Values.deployer.domain }}
             user: gitops_sample_username
             password: gitops_sample_password
             vcenter_console: gitops_sample_vcenter_console
